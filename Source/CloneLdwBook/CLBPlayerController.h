@@ -14,4 +14,11 @@ class CLONELDWBOOK_API ACLBPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 	
+protected:
+	virtual void BeginPlay() override;
+
+public:
+	virtual void PostInitializeComponents() override;
+	virtual void OnPossess(APawn* InPawn) override;
+
 };
